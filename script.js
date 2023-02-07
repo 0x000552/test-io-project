@@ -18,6 +18,7 @@ while ( arrayTelNumber.length > 1 && arrayTelNumber[0] === '0' ) {
 }
 
 if (arrayTelNumber.length <= 10) {
+  document.body.innerHTML = `Too short number ${arrayTelNumber}. Refresh page and input correct one!`
   throw new Error(`Too short number ${arrayTelNumber}`);
 }
 
@@ -28,6 +29,6 @@ if ( arrayTelNumber.slice(0,2).join('') !== '62' ) {
 const telNumber = arrayTelNumber.join('');
 console.log(telNumber);
 
-document.body.innerHTML = `<p>Press me: <a href="https://wa.me/${telNumber}">wa.me/${telNumber}</a></p>`;
+// document.body.innerHTML = `<p>Press me: <a href="https://wa.me/${telNumber}">wa.me/${telNumber}</a></p>`;
 
-//confirm() ? window.open(`https://wa.me/${telNumber}`) : null;
+location.href = `href="https://wa.me/${telNumber}`
