@@ -29,6 +29,6 @@ if ( arrayTelNumber.slice(0,2).join('') !== '62' ) {
 const telNumber = arrayTelNumber.join('');
 console.log(telNumber);
 
-// document.body.innerHTML = `<p>Press me: <a href="https://wa.me/${telNumber}">wa.me/${telNumber}</a></p>`;
+document.body.innerHTML = `<p>Press me: <a href="https://wa.me/${telNumber}">wa.me/${telNumber}</a></p>`;
 
 location.href = `href="https://wa.me/${telNumber}`
