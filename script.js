@@ -31,4 +31,4 @@ console.log(telNumber);
 
 document.body.innerHTML = `<p>Press me: <a href="https://wa.me/${telNumber}">wa.me/${telNumber}</a></p>`;
 
-location.href = `href="https://wa.me/${telNumber}`
+location.href = `https://wa.me/${telNumber}`
